@@ -1,0 +1,19 @@
+@import "./vars";
+@import "./vendor/reset.scss";
+
+body {
+    background-color: $black;
+    font-size: 21px;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import "./blocks/header.scss";
+@import "./blocks/main.scss";
+@import "./blocks/footer.scss";
+

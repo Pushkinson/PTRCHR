@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  height: 320px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: space-between;
+
+  &__name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 259px;
+    margin: 30px 100px;
+  }
+
+  &__nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-right: 222px;
+
+    & > div {
+      font-family: 'Manrope';
+      font-weight: 500;
+      font-size: 24px;
+      margin: 5px;
+      cursor: pointer;
+
+      &:hover {
+        font-style: italic;
+      }
+    }
+
+    &_basket {
+      justify-content: space-between;
+
+      &_value {
+        margin-left: 100px;
+      }
+    }
+  }
+}
