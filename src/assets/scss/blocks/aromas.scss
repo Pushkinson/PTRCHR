@@ -1,0 +1,66 @@
+.aromas {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__element {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px 10px;
+    border-bottom: 1px solid $gray;
+
+    &_name {
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 15px;
+
+      & > a {
+        font-family: 'Manrope';
+        color: $gray-text;
+        font-size: 2rem;
+        font-weight: 500;
+        padding-bottom: 10px;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+
+    &_number {
+      font-size: 5rem;
+      font-weight: 500;
+      color: $gray;
+      font-style: italic;
+    }
+  }
+
+  &__content {
+    min-height: 250px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+
+    &_description {
+      width: 300px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+      line-height: 2.6rem;
+    }
+
+    &_composition {
+      width: 280px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+    }
+  }
+}

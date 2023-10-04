@@ -1,9 +1,13 @@
 @import "./vars";
 @import "./vendor/reset.scss";
 
+html {
+    font-size: 10px;
+}
+
 body {
     background-color: $black;
-    font-size: 21px;
+    font-size: 2rem;
     color: white;
 }
 
@@ -13,7 +17,34 @@ body {
     justify-content: center;
 }
 
+.background-nature {
+    background-image: url('../images/background-nature.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: $gray;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $gray;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Manrope';
+    font-size: 2rem;
+    color: $gray-text;
+}
+
 @import "./blocks/header.scss";
-@import "./blocks/main.scss";
+@import "./blocks/page.scss";
+@import "./blocks/aromas.scss";
 @import "./blocks/footer.scss";
 
