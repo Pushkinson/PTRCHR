@@ -1,0 +1,37 @@
+.aromaPage {
+  margin: 0 auto;
+
+  &__container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 300px 35px;
+    position: relative;
+
+    & > p {
+      max-width: 600px;
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    justify-content: space-between;
+    gap: 10px;
+
+    & > a {
+      font-family: 'Manrope';
+      color: $gray-text;
+      font-size: 2rem;
+      font-weight: 400;
+      border-right: 2px solid $gray-text;
+      padding-right: 10px;
+      cursor: pointer;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}

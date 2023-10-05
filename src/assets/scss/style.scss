@@ -22,6 +22,7 @@ body {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -46,5 +47,5 @@ p {
 @import "./blocks/header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/aromas.scss";
+@import "./blocks/aroma-page.scss";
 @import "./blocks/footer.scss";
-
