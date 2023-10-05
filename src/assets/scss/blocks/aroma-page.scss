@@ -3,6 +3,11 @@
 
   &__container {
     flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__info {
+    flex-direction: column;
     gap: 40px;
     padding: 300px 35px;
     position: relative;
@@ -31,6 +36,71 @@
 
       &:last-child {
         border: none;
+      }
+    }
+  }
+
+  &__product {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 50px 25px;
+
+    &_title {
+      width: 100%;
+      align-self: flex-start;
+      font-family: 'Manrope';
+      padding-bottom: 20px;
+      border-bottom: 1px solid $gray;
+    }
+
+    &_slider {
+      position: relative;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      max-width: 1400px;
+    }
+
+    &_element {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      &:nth-child(2n) img {
+        height: 450px;
+      }
+
+      &:nth-child(3n) img {
+        height: 500px;
+      }
+    }
+
+    &_name {
+      font-family: 'Manrope';
+      font-size: 2rem;
+    }
+
+    &_content {
+      width: 450px;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 120px 20px 20px 20px;
+      border: 1px solid $gray;
+
+      & > img {
+        margin-left: -75px;
+        height: 550px;
+      }
+
+      & > a {
+        font-family: 'Manrope';
+        color: $gray-text;
+        font-size: 2.2rem;
+        font-weight: 400;
+        cursor: pointer;
+        padding-bottom: 20px;
       }
     }
   }

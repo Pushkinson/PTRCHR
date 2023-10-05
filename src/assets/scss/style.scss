@@ -44,6 +44,25 @@ p {
     color: $gray-text;
 }
 
+.slider_arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../images/slider-arrow.svg') no-repeat center;
+    cursor: pointer;
+
+    &-left {
+        top: 50%;
+        left: -60px;
+        transform: rotate(0.5turn)
+    }
+
+    &-right {
+        top: 50%;
+        right: -60px;
+    }
+}
+
 @import "./blocks/header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/aromas.scss";

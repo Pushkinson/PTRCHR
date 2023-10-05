@@ -380,6 +380,7 @@ body {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
@@ -535,6 +536,53 @@ p {
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 22px;
+}
+
+.aromaPage {
+    margin: 0 auto;
+}
+
+.aromaPage__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.aromaPage__info {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 40px;
+    padding: 300px 35px;
+    position: relative;
+}
+
+.aromaPage__info > p {
+    max-width: 600px;
+    text-align: center;
+}
+
+.aromaPage__nav {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.aromaPage__nav > a {
+    font-family: "Manrope";
+    color: #B0B8AC;
+    font-size: 2rem;
+    font-weight: 400;
+    border-right: 2px solid #B0B8AC;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.aromaPage__nav > a:last-child {
+    border: none;
 }
 
 .footer {
