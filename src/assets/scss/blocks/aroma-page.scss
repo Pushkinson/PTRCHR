@@ -2,6 +2,7 @@
   margin: 0 auto;
 
   &__container {
+    position: relative;
     flex-direction: column;
     justify-content: flex-start;
   }

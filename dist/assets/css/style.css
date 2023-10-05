@@ -402,6 +402,26 @@ p {
     color: #B0B8AC;
 }
 
+.slider_arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/slider-arrow.svg") no-repeat center;
+    cursor: pointer;
+}
+
+.slider_arrow-left {
+    top: 50%;
+    left: -60px;
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn);
+}
+
+.slider_arrow-right {
+    top: 50%;
+    right: -60px;
+}
+
 .header {
     width: 100%;
     height: 300px;
@@ -543,6 +563,7 @@ p {
 }
 
 .aromaPage__container {
+    position: relative;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: start;
@@ -583,6 +604,80 @@ p {
 
 .aromaPage__nav > a:last-child {
     border: none;
+}
+
+.aromaPage__product {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 50px 25px;
+}
+
+.aromaPage__product_title {
+    width: 100%;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-family: "Manrope";
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.aromaPage__product_slider {
+    position: relative;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 20px;
+    max-width: 1400px;
+}
+
+.aromaPage__product_element {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.aromaPage__product_element:nth-child(2n) img {
+    height: 450px;
+}
+
+.aromaPage__product_element:nth-child(3n) img {
+    height: 500px;
+}
+
+.aromaPage__product_name {
+    font-family: "Manrope";
+    font-size: 2rem;
+}
+
+.aromaPage__product_content {
+    width: 450px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 120px 20px 20px 20px;
+    border: 1px solid #DEDEDE;
+}
+
+.aromaPage__product_content > img {
+    margin-left: -75px;
+    height: 550px;
+}
+
+.aromaPage__product_content > a {
+    font-family: "Manrope";
+    color: #B0B8AC;
+    font-size: 2.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding-bottom: 20px;
 }
 
 .footer {
