@@ -25,6 +25,14 @@ body {
     background-size: cover;
 }
 
+.background-gradient {
+    background-image: url('../images/gradient.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h2 {
     font-size: 6rem;
     font-weight: 700;
@@ -67,4 +75,5 @@ p {
 @import "./blocks/page.scss";
 @import "./blocks/aromas.scss";
 @import "./blocks/aroma-page.scss";
+@import "./blocks/bussiness.scss";
 @import "./blocks/footer.scss";

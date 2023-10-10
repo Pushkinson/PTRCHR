@@ -383,6 +383,14 @@ body {
     background-size: cover;
 }
 
+.background-gradient {
+    background-image: url("../images/gradient.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h2 {
     font-size: 6rem;
     font-weight: 700;
@@ -428,12 +436,16 @@ p {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 10px 35px;
+    position: absolute;
+    top: 0;
+    max-width: 1600px;
 }
 
 .header__name {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
     font-size: 18rem;
+    color: #DEDEDE;
 }
 
 .header__nav {
@@ -448,6 +460,7 @@ p {
     font-family: "Manrope";
     font-weight: 500;
     font-size: 2rem;
+    color: #DEDEDE;
     padding: 5px;
     cursor: pointer;
 }
@@ -678,6 +691,61 @@ p {
     font-weight: 400;
     cursor: pointer;
     padding-bottom: 20px;
+}
+
+.bussiness {
+    margin: 0 auto;
+    padding-top: 300px;
+}
+
+.bussiness__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 50px 35px 40px;
+}
+
+.bussiness__preview {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.bussiness__preview_text {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bussiness__preview_text_content {
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    text-transform: uppercase;
+    line-height: 6rem;
+    max-width: 1000px;
+}
+
+.bussiness__preview_aroma {
+    width: 100%;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 100px;
+    border-top: 1px solid #DEDEDE;
+    padding-top: 20px;
+}
+
+.bussiness__preview_aroma_content {
+    max-width: 600px;
 }
 
 .footer {
