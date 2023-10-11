@@ -701,9 +701,7 @@ p {
 .bussiness__container {
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 50px 35px 40px;
+    padding: 50px 0 40px;
 }
 
 .bussiness__preview {
@@ -713,6 +711,7 @@ p {
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 30px;
+    padding: 50px 35px;
 }
 
 .bussiness__preview_text {
@@ -746,6 +745,485 @@ p {
 
 .bussiness__preview_aroma_content {
     max-width: 600px;
+    color: #DEDEDE;
+    line-height: 2.2rem;
+}
+
+.bussiness__about {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 35px;
+}
+
+.bussiness__about_title {
+    width: 100%;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DEDEDE;
+    text-transform: uppercase;
+}
+
+.bussiness__about_graph {
+    width: 100%;
+    height: 400px;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 30px 0 60px 0;
+}
+
+.bussiness__about_graph_container {
+    height: 100%;
+    position: relative;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 20px;
+    border-bottom: 1px solid #DEDEDE;
+    padding-right: 70px;
+}
+
+.bussiness__about_graph_container_text {
+    width: 190px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+}
+
+.bussiness__about_graph .graph_element {
+    height: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bussiness__about_graph .graph_element-98 {
+    width: 70px;
+    height: 98%;
+}
+
+.bussiness__about_graph .graph_element-4 {
+    width: 70px;
+    height: 20%;
+    border: 1px solid #DEDEDE;
+    border-bottom: none;
+}
+
+.bussiness__about_graph .graph_element-14 {
+    width: 70px;
+    height: 80%;
+}
+
+.bussiness__about_graph .graph_element-9 {
+    width: 70px;
+    height: 35%;
+    border: 1px solid #DEDEDE;
+    border-bottom: none;
+}
+
+.bussiness__about_graph .graph_element-49 {
+    width: 70px;
+    height: 49%;
+}
+
+.bussiness__about_graph .graph_element-34 {
+    width: 70px;
+    height: 34%;
+    border: 1px solid #DEDEDE;
+    border-bottom: none;
+}
+
+.bussiness__about_graph .graph_element-23 {
+    width: 70px;
+    height: 23%;
+}
+
+.bussiness__about_graph .graph_element-15 {
+    width: 70px;
+    height: 15%;
+    border: 1px solid #DEDEDE;
+    border-bottom: none;
+}
+
+.bussiness__about_graph_info {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 20px;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 0 0 30px 0;
+}
+
+.bussiness__about_graph_info .graph_info_existence {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.bussiness__about_graph_info .graph_info_existence > p {
+    width: 200px;
+}
+
+.bussiness__about_graph_info .graph_info_existence-square {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #DEDEDE;
+}
+
+.bussiness__about_graph_info .graph_info_text {
+    max-width: 300px;
+}
+
+.bussiness__about_graph_info .graph_info_text > p {
+    line-height: 2.1rem;
+}
+
+.bussiness__about_content {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.bussiness__about_content_element {
+    max-width: 450px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bussiness__about_content_element > p {
+    color: #DEDEDE;
+    line-height: 2.4rem;
+}
+
+.bussiness__description {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 50px 35px;
+}
+
+.bussiness__description_title {
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    text-transform: uppercase;
+}
+
+.bussiness__description_content {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.bussiness__description_element {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.bussiness__description_element > p {
+    color: #DEDEDE;
+    line-height: 2.4rem;
+    padding-right: 60px;
+}
+
+.bussiness__description_element_line {
+    width: 100%;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.bussiness__description_element_circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #DEDEDE;
+    font-style: italic;
+    opacity: 0.9;
+    margin: -25px 0 50px;
+}
+
+.bussiness__description_note {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.bussiness__description_note > p {
+    max-width: 500px;
+    color: #DEDEDE;
+    line-height: 2.4rem;
+}
+
+.bussiness__definition {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 35px;
+}
+
+.bussiness__definition_title {
+    max-width: 1400px;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+}
+
+.bussiness__definition_title > h2 {
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    text-transform: uppercase;
+    line-height: 6rem;
+}
+
+.bussiness__definition_buttons {
+    width: 80%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bussiness__definition_buttons > a {
+    font-family: "Manrope";
+    font-size: 2rem;
+    font-weight: 500;
+    color: #DEDEDE;
+    text-transform: uppercase;
+    border: 1px solid #DEDEDE;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.bussiness__projects {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 50px 35px;
+}
+
+.bussiness__projects_header {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.bussiness__projects_title {
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    text-transform: uppercase;
+}
+
+.bussiness__projects_slider {
+    position: relative;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1400px;
+    margin-top: 30px;
+}
+
+.bussiness__projects_element {
+    width: 400px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bussiness__projects_content {
+    width: 100%;
+    height: 400px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-color: #DEDEDE;
+    border: 1px solid #DEDEDE;
+}
+
+.bussiness__projects_text {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 25px;
+    font-family: "Manrope";
+    font-size: 2rem;
+}
+
+.bussiness__partners {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 35px;
+    gap: 30px;
+}
+
+.bussiness__partners_title {
+    width: 100%;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DEDEDE;
+    text-transform: uppercase;
+}
+
+.bussiness__partners_companies a img {
+    width: 70%;
+    height: 70%;
+}
+
+.bussiness__form {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 50px 35px;
+    gap: 10px;
+}
+
+.bussiness__form_title {
+    width: 100%;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-family: "Manrope";
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DEDEDE;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DEDEDE;
+    text-transform: uppercase;
+}
+
+.bussiness__form_content {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.bussiness__form_content > p {
+    max-width: 400px;
+    color: #DEDEDE;
+}
+
+.bussiness__form_element {
+    width: 60%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    gap: 15px;
+}
+
+.bussiness__form_row {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bussiness__form_input {
+    width: 100%;
+}
+
+.bussiness__form_input > input {
+    width: 100%;
+    color: #DEDEDE;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #DEDEDE;
+    padding: 15px 20px 10px;
+}
+
+.bussiness__form_textarea {
+    width: 100%;
+}
+
+.bussiness__form_textarea > textarea {
+    width: 100%;
+    height: 200px;
+    color: #DEDEDE;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #DEDEDE;
+    padding: 15px 20px 10px;
+}
+
+.bussiness__form_button {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.bussiness__form_button > p {
+    max-width: 500px;
+    color: #DEDEDE;
+}
+
+.bussiness__form_button > input {
+    font-family: "Manrope";
+    font-size: 2rem;
+    font-weight: 500;
+    color: #DEDEDE;
+    text-transform: uppercase;
+    border: 1px solid #DEDEDE;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .footer {

@@ -1,0 +1,247 @@
+@media (max-width: 1350px) {
+  .bussiness {
+    &__projects {
+      &_element {
+        width: 350px;
+      }
+    }
+
+
+    &__about {
+      &_graph {
+        &_container {
+          padding-right: 50px;
+        }
+      }
+    }
+
+    &__form {
+      &_element {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .bussiness {
+    &__preview {
+      &_aroma {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+
+    &__about {
+      &_wrapper {
+        flex-direction: column;
+      }
+
+      &_graph {
+        &_info {
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin: 30px 0 0 0;
+          border-bottom: none;
+        }
+      }
+    }
+
+    &__definition {
+      &_buttons {
+        width: 100%;
+      }
+    }
+
+    &__projects {
+      &_slider {
+        justify-content: space-around;
+      }
+
+      &_element {
+        width: 500px;
+
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+
+      &_text {
+        & > p:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+
+    &__form {
+      &_element {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .bussiness {
+    &__about {
+      &_graph {
+        height: 300px;
+
+        .graph_element {
+          & > div {
+            width: 60px;
+          }
+          & > p {
+            display: none;
+          }
+        }
+
+        &_container {
+          gap: 10px;
+          padding-right: 30px;
+
+          &_text {
+            display: none;
+          }
+        }
+      }
+
+      &_content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 50px 0;
+      }
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__definition {
+      &_buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        & > a {
+          min-width: 400px;
+          font-size: 3rem;
+          padding: 25px 70px;
+        }
+      }
+    }
+
+    &__projects {
+      &_element {
+        width: 350px;
+      }
+    }
+
+    &__partners {
+      &_companies {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        & > a {
+          max-width: 200px;
+        }
+      }
+    }
+
+    &__form {
+      &_row  {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .bussiness {
+    &__about {
+      &_graph {
+        height: 250px;
+
+        .graph_element {
+          & > div {
+            width: 40px;
+          }
+          & > p {
+            display: none;
+          }
+        }
+
+        &_container {
+          gap: 10px;
+          padding-right: 20px;
+
+          &_text {
+            display: none;
+          }
+        }
+      }
+
+      &_content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 50px 0;
+      }
+    }
+
+    &__partners {
+      &_companies {
+        & > a {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .bussiness {
+    &__about {
+      &_graph {
+        height: 200px;
+
+        .graph_element {
+          & > div {
+            width: 30px;
+          }
+        }
+
+        &_container {
+          gap: 5px;
+          padding-right: 12px;
+        }
+      }
+    }
+
+    &__definition {
+      &_buttons {
+        gap: 20px;
+
+        & > a {
+          min-width: 300px;
+          font-size: 3rem;
+          padding: 25px 50px;
+        }
+      }
+    }
+
+    &__projects {
+      &_element {
+        width: 250px;
+      }
+    }
+
+    &__partners {
+      &_companies {
+        & > a {
+          max-width: 120px;
+        }
+      }
+    }
+  }
+}

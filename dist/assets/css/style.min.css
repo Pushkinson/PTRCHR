@@ -411,6 +411,11 @@ p {
   right: -60px;
 }
 
+@media (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
+}
 .header {
   width: 100%;
   height: 300px;
@@ -669,6 +674,11 @@ p {
   border-bottom: 1px solid #DEDEDE;
   text-transform: uppercase;
 }
+.bussiness__about_wrapper {
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .bussiness__about_graph {
   width: 100%;
   height: 400px;
@@ -746,6 +756,7 @@ p {
   gap: 20px;
   border-bottom: 1px solid #DEDEDE;
   padding: 0 0 30px 0;
+  margin: 30px 0 60px 0;
 }
 .bussiness__about_graph_info .graph_info_existence {
   justify-content: flex-end;
@@ -768,6 +779,7 @@ p {
 .bussiness__about_content {
   width: 100%;
   justify-content: space-between;
+  gap: 50px;
   margin: 70px 0;
 }
 .bussiness__about_content_element {
@@ -856,6 +868,9 @@ p {
   justify-content: space-between;
 }
 .bussiness__definition_buttons > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Manrope";
   font-size: 2rem;
   font-weight: 500;
@@ -930,9 +945,18 @@ p {
   border-bottom: 1px solid #DEDEDE;
   text-transform: uppercase;
 }
-.bussiness__partners_companies a img {
-  width: 70%;
-  height: 70%;
+.bussiness__partners_companies {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.bussiness__partners_companies > a > img {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  min-width: 130px;
+}
+.bussiness__partners_companies > a:last-child > img {
+  min-width: 280px;
 }
 .bussiness__form {
   width: 100%;
@@ -1018,6 +1042,151 @@ p {
   background-color: rgba(255, 255, 255, 0);
 }
 
+@media (max-width: 1350px) {
+  .bussiness__projects_element {
+    width: 350px;
+  }
+  .bussiness__about_graph_container {
+    padding-right: 50px;
+  }
+  .bussiness__form_element {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .bussiness__preview_aroma {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bussiness__about_wrapper {
+    flex-direction: column;
+  }
+  .bussiness__about_graph_info {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px 0 0 0;
+    border-bottom: none;
+  }
+  .bussiness__definition_buttons {
+    width: 100%;
+  }
+  .bussiness__projects_slider {
+    justify-content: space-around;
+  }
+  .bussiness__projects_element {
+    width: 500px;
+  }
+  .bussiness__projects_element:not(:first-child) {
+    display: none;
+  }
+  .bussiness__projects_text > p:not(:first-child) {
+    display: none;
+  }
+  .bussiness__form_element {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .bussiness__about_graph {
+    height: 300px;
+  }
+  .bussiness__about_graph .graph_element > div {
+    width: 60px;
+  }
+  .bussiness__about_graph .graph_element > p {
+    display: none;
+  }
+  .bussiness__about_graph_container {
+    gap: 10px;
+    padding-right: 30px;
+  }
+  .bussiness__about_graph_container_text {
+    display: none;
+  }
+  .bussiness__about_content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+  .bussiness__description {
+    display: none;
+  }
+  .bussiness__definition_buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .bussiness__definition_buttons > a {
+    min-width: 400px;
+    font-size: 3rem;
+    padding: 25px 70px;
+  }
+  .bussiness__projects_element {
+    width: 350px;
+  }
+  .bussiness__partners_companies {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .bussiness__partners_companies > a {
+    max-width: 200px;
+  }
+  .bussiness__form_row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .bussiness__about_graph {
+    height: 250px;
+  }
+  .bussiness__about_graph .graph_element > div {
+    width: 40px;
+  }
+  .bussiness__about_graph .graph_element > p {
+    display: none;
+  }
+  .bussiness__about_graph_container {
+    gap: 10px;
+    padding-right: 20px;
+  }
+  .bussiness__about_graph_container_text {
+    display: none;
+  }
+  .bussiness__about_content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+  .bussiness__partners_companies > a {
+    max-width: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .bussiness__about_graph {
+    height: 200px;
+  }
+  .bussiness__about_graph .graph_element > div {
+    width: 30px;
+  }
+  .bussiness__about_graph_container {
+    gap: 5px;
+    padding-right: 12px;
+  }
+  .bussiness__definition_buttons {
+    gap: 20px;
+  }
+  .bussiness__definition_buttons > a {
+    min-width: 300px;
+    font-size: 3rem;
+    padding: 25px 50px;
+  }
+  .bussiness__projects_element {
+    width: 250px;
+  }
+  .bussiness__partners_companies > a {
+    max-width: 120px;
+  }
+}
 .footer {
   width: 100%;
   flex-direction: column;

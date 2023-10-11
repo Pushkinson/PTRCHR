@@ -71,9 +71,16 @@ p {
     }
 }
 
+@media (max-width: 700px) {
+    html {
+        font-size: 6px;
+    }
+}
+
 @import "./blocks/header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/aromas.scss";
 @import "./blocks/aroma-page.scss";
 @import "./blocks/bussiness.scss";
+@import "./blocks/media/bussiness-media.scss";
 @import "./blocks/footer.scss";
