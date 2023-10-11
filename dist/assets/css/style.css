@@ -407,7 +407,7 @@ h3 {
 p {
     font-family: "Manrope";
     font-size: 2rem;
-    color: #B0B8AC;
+    color: #DEDEDE;
 }
 
 .slider_arrow {
@@ -428,6 +428,12 @@ p {
 .slider_arrow-right {
     top: 50%;
     right: -60px;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 6px;
+    }
 }
 
 .header {
@@ -562,6 +568,10 @@ p {
     line-height: 2.6rem;
 }
 
+.aromas__content_description > p {
+    color: #B0B8AC;
+}
+
 .aromas__content_composition {
     width: 280px;
     -ms-flex-direction: column;
@@ -569,6 +579,10 @@ p {
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 22px;
+}
+
+.aromas__content_composition > p {
+    color: #B0B8AC;
 }
 
 .aromaPage {
@@ -769,6 +783,14 @@ p {
     text-transform: uppercase;
 }
 
+.bussiness__about_wrapper {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
 .bussiness__about_graph {
     width: 100%;
     height: 400px;
@@ -868,6 +890,7 @@ p {
     gap: 20px;
     border-bottom: 1px solid #DEDEDE;
     padding: 0 0 30px 0;
+    margin: 30px 0 60px 0;
 }
 
 .bussiness__about_graph_info .graph_info_existence {
@@ -898,6 +921,7 @@ p {
     width: 100%;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    gap: 50px;
     margin: 70px 0;
 }
 
@@ -1014,6 +1038,12 @@ p {
 }
 
 .bussiness__definition_buttons > a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-family: "Manrope";
     font-size: 2rem;
     font-weight: 500;
@@ -1111,9 +1141,21 @@ p {
     text-transform: uppercase;
 }
 
-.bussiness__partners_companies a img {
-    width: 70%;
-    height: 70%;
+.bussiness__partners_companies {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.bussiness__partners_companies > a > img {
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    min-width: 130px;
+}
+
+.bussiness__partners_companies > a:last-child > img {
+    min-width: 280px;
 }
 
 .bussiness__form {
@@ -1224,6 +1266,338 @@ p {
     border: 1px solid #DEDEDE;
     padding: 15px 50px;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.about {
+    margin: 0 auto;
+    padding-top: 300px;
+}
+
+.about__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0 40px;
+}
+
+.about__brand {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 150px;
+    padding: 50px 35px;
+}
+
+.about__brand_title {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 30px;
+    border-top: 1px solid #DEDEDE;
+    padding: 30px 0;
+}
+
+.about__brand_title > h3 {
+    min-width: 200px;
+}
+
+.about__brand_title > p {
+    width: 40%;
+    color: #DEDEDE;
+    line-height: 2.4rem;
+}
+
+.about__brand_numbers {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 30px 0;
+}
+
+.about__brand_numbers > div {
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: 2.2rem;
+    color: #DEDEDE;
+    cursor: pointer;
+}
+
+.about__brand_numbers > div:first-child {
+    margin-left: 230px;
+}
+
+.about__brand_numbers > div:last-child {
+    color: #B0B8AC;
+    opacity: 0.7;
+}
+
+.about__content {
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 150px;
+    padding: 50px 35px;
+}
+
+.about__content_owner {
+    width: 100%;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about__content_owner > h3 {
+    width: 200px;
+}
+
+.about__content_owner_image {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about__content_owner > p {
+    width: 50%;
+    color: #DEDEDE;
+    line-height: 2.4rem;
+}
+
+.about__content_team {
+    width: 100%;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about__content_team > h3 {
+    width: 200px;
+}
+
+.about__content_team_container {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about__content_team_element {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about__content_team_element > p {
+    line-height: 2.5rem;
+}
+
+@media (max-width: 1350px) {
+    .bussiness__projects_element {
+        width: 350px;
+    }
+
+    .bussiness__about_graph_container {
+        padding-right: 50px;
+    }
+
+    .bussiness__form_element {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bussiness__preview_aroma {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bussiness__about_wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .bussiness__about_graph_info {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin: 30px 0 0 0;
+        border-bottom: none;
+    }
+
+    .bussiness__definition_buttons {
+        width: 100%;
+    }
+
+    .bussiness__projects_slider {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .bussiness__projects_element {
+        width: 500px;
+    }
+
+    .bussiness__projects_element:not(:first-child) {
+        display: none;
+    }
+
+    .bussiness__projects_text > p:not(:first-child) {
+        display: none;
+    }
+
+    .bussiness__form_element {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .bussiness__about_graph {
+        height: 300px;
+    }
+
+    .bussiness__about_graph .graph_element > div {
+        width: 60px;
+    }
+
+    .bussiness__about_graph .graph_element > p {
+        display: none;
+    }
+
+    .bussiness__about_graph_container {
+        gap: 10px;
+        padding-right: 30px;
+    }
+
+    .bussiness__about_graph_container_text {
+        display: none;
+    }
+
+    .bussiness__about_content {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin: 50px 0;
+    }
+
+    .bussiness__description {
+        display: none;
+    }
+
+    .bussiness__definition_buttons {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .bussiness__definition_buttons > a {
+        min-width: 400px;
+        font-size: 3rem;
+        padding: 25px 70px;
+    }
+
+    .bussiness__projects_element {
+        width: 350px;
+    }
+
+    .bussiness__partners_companies {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .bussiness__partners_companies > a {
+        max-width: 200px;
+    }
+
+    .bussiness__form_row {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .bussiness__about_graph {
+        height: 250px;
+    }
+
+    .bussiness__about_graph .graph_element > div {
+        width: 40px;
+    }
+
+    .bussiness__about_graph .graph_element > p {
+        display: none;
+    }
+
+    .bussiness__about_graph_container {
+        gap: 10px;
+        padding-right: 20px;
+    }
+
+    .bussiness__about_graph_container_text {
+        display: none;
+    }
+
+    .bussiness__about_content {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin: 50px 0;
+    }
+
+    .bussiness__partners_companies > a {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bussiness__about_graph {
+        height: 200px;
+    }
+
+    .bussiness__about_graph .graph_element > div {
+        width: 30px;
+    }
+
+    .bussiness__about_graph_container {
+        gap: 5px;
+        padding-right: 12px;
+    }
+
+    .bussiness__definition_buttons {
+        gap: 20px;
+    }
+
+    .bussiness__definition_buttons > a {
+        min-width: 300px;
+        font-size: 3rem;
+        padding: 25px 50px;
+    }
+
+    .bussiness__projects_element {
+        width: 250px;
+    }
+
+    .bussiness__partners_companies > a {
+        max-width: 120px;
+    }
 }
 
 .footer {

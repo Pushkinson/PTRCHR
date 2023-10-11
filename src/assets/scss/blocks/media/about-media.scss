@@ -1,0 +1,154 @@
+@media (max-width: 1350px) {
+  .about {
+    &__content {
+      &_team {
+        &_element {
+          & > img {
+            width: 200px;
+            height: 250px;
+          }
+        }
+      }
+
+      &_certificates {
+        &_container {
+          & > img {
+            width: 200px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    &__content {
+      &_team {
+        flex-direction: column;
+      }
+
+      &_certificates {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    &__brand {
+      gap: 200px;
+
+      &_title {
+        flex-direction: column;
+
+        & > h3 {
+          font-size: 4rem;
+        }
+
+        & > p {
+          width: 100%;
+          font-size: 2.6rem;
+          line-height: 3rem;
+        }
+      }
+
+      &_numbers {
+        & > div:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__content {
+      &_owner {
+        flex-direction: column;
+
+        & > h3 {
+          font-size: 4rem;
+        }
+
+        & > p {
+          width: 100%;
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+
+        &_image {
+          & > p {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      &_team {
+        & > h3 {
+          font-size: 4rem;
+        }
+
+        &_slider {
+          align-self: center;
+
+          & > div:not(:first-child) {
+            display: none;
+          }
+
+          & > .slider_arrow {
+            display: block !important;
+          }
+        }
+
+        &_element {
+          & > img {
+            width: 100%;
+            height: 100%;
+          }
+
+          & > p {
+            font-size: 2.5rem;
+            line-height: 3rem;
+          }
+        }
+      }
+
+      &_certificates {
+        display: none;
+      }
+
+      &_info {
+        display: none;
+      }
+    }
+
+    &__form {
+      &_title {
+        & > p:first-child {
+          font-size: 3.3rem;
+        }
+
+        & > p:last-child {
+          font-size: 2rem;
+        }
+      }
+
+      &_element {
+        width: 100%;
+      }
+
+      &_input {
+        & > input {
+          height: 60px;
+        }
+      }
+
+      &_button {
+        & > p {
+          max-width: 400px;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
